@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+
+a{
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 4px;
+	color: #fff;
+	text-decoration: none;
+}
+
+a svg,
+a svg rect{
+	position: absolute;
+	top: 0;
+	left: -20px;
+	width: 170%;
+	height: 100%;
+	fill: transparent;
+}
+
+a svg rect{
+	stroke: #ed192d;
+	stroke-width: 4;
+	transition: 2s;
+	stroke-dasharray: 100 250;
+	stroke-dashoffset: 405;
+}
+
+a:hover svg rect{
+	stroke: #cfc6b9;
+	stroke-dasharray: 100 250;
+	stroke-dashoffset: 55;
+}
+
+
+
+
+
+
+
+
+
+
+
