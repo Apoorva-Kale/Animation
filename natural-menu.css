@@ -1,0 +1,82 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(natural-menu.jpg);
+	background-size: cover;
+}
+
+ul{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+
+ul li{
+	list-style: none;
+}
+
+ul li a{
+	position: relative;
+	text-decoration:none;
+	text-transform: uppercase;
+	color: #262626;
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: 18px;
+	transition: .5s;
+	border-radius: 50% 0 50% 0;
+}
+
+ul li a:hover{
+	background: #196719;
+	color: #fff;
+}
+
+ul li a:before{
+	content: "";
+	position: absolute;
+	top: -17%;
+	left: 90%;
+	width: 30px;
+	height: 3px;
+	background-color: #196719;
+	transform: translateY(-10px);
+	transition: transform .5s;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+ul li a:hover:before{
+	transform: translateY(0px);
+	transform: rotate(-30deg);
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
