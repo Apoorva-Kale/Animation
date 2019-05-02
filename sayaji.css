@@ -26,7 +26,7 @@ a svg rect{
 	position: absolute;
 	top: 0;
 	left: -20px;
-	width: 170%;
+	width: 350px;
 	height: 100%;
 	fill: transparent;
 }
@@ -35,14 +35,14 @@ a svg rect{
 	stroke: #ed192d;
 	stroke-width: 4;
 	transition: 2s;
-	stroke-dasharray: 100 250;
-	stroke-dashoffset: 405;
+	stroke-dasharray: 60 350;
+	stroke-dashoffset: 130;
 }
 
 a:hover svg rect{
 	stroke: #cfc6b9;
-	stroke-dasharray: 100 250;
-	stroke-dashoffset: 55;
+	stroke-dasharray: 350 60;
+	stroke-dashoffset: 0;
 }
 
 
