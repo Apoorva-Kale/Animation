@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #000;
+	font-family: sans-serif;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 100vh;
+}
+
+.load{
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	text-transform: uppercase;
+	font-size: 2em;
+	color: #000;
+	font-weight: bold;
+	letter-spacing: .5em;
+}
+
+.load span{
+	color: #fff;
+	mix-blend-mode: difference;
+}
+
+.load:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 100%;
+	background-color: #fff;
+	animation: ani 2s linear infinite;
+}	
+
+@keyframes ani{
+	0%{
+		left:10px;
+	}
+
+	50%{
+		left: calc(100% - 80px);
+	}
+
+	100%{
+		left: -10px;
+	}
+}
