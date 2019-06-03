@@ -1,0 +1,68 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+.moustache{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	width: 180px;
+	height: 181px;
+	border-radius: 50%;
+	box-shadow: 150px 240px 0 0 black,300px 240px 0 0 black;
+}
+
+.moustache:before{
+	content: "";
+	position: absolute;
+	top: 132px;
+	left: 50px;
+	width: 180px;
+	height: 109px;
+	border-bottom: solid 180px black;
+	border-radius: 0 0 0 100%;
+	transform: rotate(-40deg);
+	transform-origin: right 175px;
+	animation: anileft 1s ease-in-out infinite;
+}
+
+.moustache:after{
+	content: "";
+	position: absolute;
+	top: 145px;
+	left: 443px;
+	width: 180px;
+	height: 109px;
+	border-bottom: solid 180px black;
+	border-radius: 0 0 100% 0;
+	transform: rotate(40deg);
+	transform-origin: left 99px;
+	animation: aniright 1s ease-in-out infinite;
+}
+
+@keyframes anileft{
+	0%{
+		transform: rotate(-50deg);
+	}
+	50%{
+		transform: rotate(-30deg);
+	}
+	100%{
+		transform: rotate(-50deg);
+	}
+}
+
+@keyframes aniright{
+	0%{
+		transform: rotate(50deg);
+	}
+	50%{
+		transform: rotate(30deg);
+	}
+	100%{
+		transform: rotate(50deg);
+	}
+}
